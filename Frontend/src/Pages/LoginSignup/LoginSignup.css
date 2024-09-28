@@ -1,0 +1,152 @@
+/* LoginSignup.css */
+.login-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-image: url('greenWall2.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  animation: slideDown 0.9s ease forwards;
+  padding: 20px; /* Add padding to prevent content from touching edges */
+}
+
+.login-signup .logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-signup .logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.login-signup .brand-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.login-signup .form-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px; /* Increase padding for better spacing */
+  border-radius: 10px;
+  width: 90%; /* Make it responsive */
+  max-width: 400px; /* Set a maximum width */
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.login-signup .form-group {
+  margin-bottom: 20px; /* Increase margin for better spacing */
+}
+
+.login-signup .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input and Select Styling */
+.login-signup .form-group input,
+.login-signup .form-group select {
+  width: 100%;
+  padding: 12px; /* Increased padding for comfort */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Additional Styling for Dropdown */
+.login-signup .form-group select {
+  appearance: none; /* Hide default dropdown arrow */
+  background-color: #f9f9f9; /* Light background */
+  cursor: pointer;
+  background-image: url('dropdown-arrow.png'); /* Optional: custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+}
+
+/* Styling for options inside the dropdown */
+.login-signup .form-group option {
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+
+/* Button Styling */
+.login-signup .submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px; /* Increased padding for comfort */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width for buttons */
+}
+
+.login-signup .submit-button:hover {
+  background-color: #45a049;
+}
+
+.login-signup .toggle-text {
+  margin-top: 15px;
+  color: #bbb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-signup .toggle-text:hover {
+  color: white;
+}
+
+.login-signup .skip-button {
+  margin-top: 10px;
+  background-color: #ccc;
+  color: black;
+  padding: 12px; /* Increased padding for comfort */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width for buttons */
+}
+
+.login-signup .skip-button:hover {
+  background-color: #bbb;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom styles for file input */
+.login-signup .form-group input[type="file"] {
+  border: 1px solid #ccc; /* Add a border for clarity */
+  padding: 10px; /* Adjust padding */
+  border-radius: 5px; /* Match the border radius */
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Additional styles for better responsiveness */
+@media (max-width: 480px) {
+  .login-signup .form-container {
+    width: 95%; /* Make it a bit wider on small screens */
+  }
+}

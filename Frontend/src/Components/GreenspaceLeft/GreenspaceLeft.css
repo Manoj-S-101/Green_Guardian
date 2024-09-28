@@ -1,0 +1,126 @@
+.greenspace-left {
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .greenspace-left h2 {
+    font-size: 22px;
+    color: #1da1f2;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .greenspace-left ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .greenspace-left li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .greenspace-left li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .greenspace-left .item-description, 
+  .greenspace-left .event-description, 
+  .greenspace-left .community-description,
+  .greenspace-left .large-community-info {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    background-color: #f9fafb;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #1da1f2;
+  }
+  
+  .greenspace-left .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px;
+  }
+  
+  .greenspace-left .more-info-btn,
+  .greenspace-left .join-btn,
+  .greenspace-left .donate-btn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .greenspace-left .more-info-btn:hover,
+  .greenspace-left .donate-btn:hover,
+  .greenspace-left .join-btn:hover {
+    background-color: #1991da;
+  }
+  
+  .greenspace-left .join-btn {
+    background-color: #34b604;
+  }
+  
+  .greenspace-left .join-btn:hover {
+    background-color: #3ec40d;
+  }
+  
+  .greenspace-left .donate-btn {
+    background-color: #f26b5e;
+  }
+  
+  .greenspace-left .donate-btn:hover {
+    background-color: #e65d54;
+  }
+  
+  @media (max-width: 768px) {
+    .greenspace-left {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .greenspace-left h2 {
+      font-size: 20px;
+    }
+  
+    .greenspace-left li {
+      font-size: 16px;
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start; /* Align content for small screens */
+    }
+  
+    .greenspace-left .button-group {
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+  
+    .greenspace-left .more-info-btn,
+    .greenspace-left .join-btn,
+    .greenspace-left .donate-btn {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  }
+  

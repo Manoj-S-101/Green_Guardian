@@ -1,0 +1,65 @@
+.home{
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+@keyframes slideInUp {
+    from {
+      transform: translateY(100%); /* Start from below */
+      opacity: 0; /* Fully transparent */
+    }
+    to {
+      transform: translateY(0); /* End in place */
+      opacity: 1; /* Fully opaque */
+    }
+  }
+  
+  /* Apply the animation to the home sections */
+  .homeRight-main,
+  .homeLeft-main,
+  .homeMiddle-main {
+      width: 40%;
+      min-height: 470px;
+      position: relative; 
+      overflow: hidden; 
+      border-radius: 15px;
+      animation: slideInUp 0.8s ease forwards; /* Apply the animation */
+  }
+  
+  .homeMiddle-main {
+      width: 55%;
+      height: 650px;
+      z-index: 100;
+      border-radius: 15px;
+  }
+.homeRight-main ,.homeLeft-main,.homeMiddle-main{
+    width: 40%;
+    /* border: 1px solid black; */
+    min-height: 470px;
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 15px;
+}
+
+.homeRight-main::before ,.homeLeft-main::before,.homeMiddle-main::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-image: url('greenWall.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    /* opacity: 0.75;  */
+    z-index: -1; 
+}
+.homeMiddle-main{
+    width: 55%;
+    /* border: 1px solid black; */
+    height: 700px;
+   z-index: 100;
+   border-radius: 15px;
+}
